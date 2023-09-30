@@ -5,9 +5,9 @@ services:
     build: .
     hostname: debian11-x86
     platform: linux/amd64/v3
-    image: debian11-curl
+    image: git.shihaam.dev/dockerfiles/debian-curl:11
   debian11-arm:
     build: .
     hostname: debian11-arm
     platform: linux/arm64
-    image: debain11-curl
+    image: git.shihaam.dev/dockerfiles/debian-curl:11

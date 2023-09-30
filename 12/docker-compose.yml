@@ -5,9 +5,9 @@ services:
       build: .
       hostname: debian12-x86
       platform: linux/amd64/v3
-      image: debian12-curl
+      image: git.shihaam.dev/dockerfiles/debian-curl:12
    debian12-arm:
       build: .
       hostname: debian12-arm
       platform: linux/arm64
-      image: debain12-curl
+      image: git.shihaam.dev/dockerfiles/debian-curl:12
