@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+#########################
+   debian12-x86:
+      build: .
+      hostname: debian12-x86
+      platform: linux/amd64/v3
+      image: debian12-curl
+   debian12-arm:
+      build: .
+      hostname: debian12-arm
+      platform: linux/arm64
+      image: debain12-curl

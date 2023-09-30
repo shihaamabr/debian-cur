@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  debian10-x86:
+    build: .
+    hostname: debian10-x86
+    platform: linux/amd64/v3
+    image: debian10-curl
+  debian10-arm:
+    build: .
+    hostname: debian10-arm
+    platform: linux/arm64
+    image: debain10-curl
