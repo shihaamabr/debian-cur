@@ -1,7 +1,7 @@
 
 
 ## Multi-arch support
-- Install emualtor:
+- Install emulator:
 ```bash
 docker run --privileged --rm tonistiigi/binfmt --uninstall qemu-* #Uninstall existing
 docker run --privileged --rm tonistiigi/binfmt --install all
