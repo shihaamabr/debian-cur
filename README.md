@@ -1,17 +1,11 @@
 
 
 ## Multi-arch support
-- You maybe need to run this command to get buildx if you get this error
-
-**Error:**
-```
-exec /bin/sh: exec format error
-```
-**Fixing command:**
+- Install emualtor:
 ```bash
-docker run --rm --privileged docker/binfmt:a7996909642ee92942dcd6cff44b9b95f08dad64
+docker run --privileged --rm tonistiigi/binfmt --uninstall qemu-* #Uninstall existing
+docker run --privileged --rm tonistiigi/binfmt --install all
 ```
-i have no idea what it does, but it seems to fix the thing ._.
 
 - You MAY also need to set these variable before running build, depending on the docker version on host
 ```bash
