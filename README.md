@@ -2,11 +2,12 @@
 
 ## Multi-arch support
 - You maybe need to run this command to get buildx if you get this error
-erro:
+
+**Error:**
 ```
 exec /bin/sh: exec format error
 ```
-fixing command:
+**Fixing command:**
 ```bash
 docker run --rm --privileged docker/binfmt:a7996909642ee92942dcd6cff44b9b95f08dad64
 ```
