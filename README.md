@@ -5,7 +5,7 @@
 ```bash
 docker run --rm --privileged docker/binfmt:a7996909642ee92942dcd6cff44b9b95f08dad64
 ```
-- You will need to set these variable before running build
+- You MAY also need to set these variable before running build, depending on the docker version on host
 ```bash
 export COMPOSE_DOCKER_CLI_BUILD=1
 export DOCKER_BUILDKIT=1
