@@ -1,16 +1,24 @@
 version: '3.5'
 services:
-  debian10-x86:
+  debian10-x86v3: &debian10
     build:
       context: .
       dockerfile: Dockerfile
     hostname: debian10-x86
     platform: linux/amd64/v3
-    image: debian-curl:x86-10
-  debian10-arm:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    hostname: debian10-arm
+    image: git.shihaam.dev/dockerfiles/debian-curl/debian-curl:test
+  debian10-x86v2:
+    <<: *debian10
+    platform: linux/amd64/v2
+  debian10-x86v1:
+    <<: *debian10
+    platform: linux/amd64/v1
+  debian10-arm64:
+    <<: *debian10
     platform: linux/arm64
-    image: debian-curl:arm-10
+  debian10-armv7:
+    <<: *debian10
+    platform: linux/arm/v7
+#  debian10-armv6:
+#    <<: *debian10
+#    platform: linux/arm/v6
