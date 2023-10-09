@@ -12,5 +12,9 @@ services:
           - linux/arm/v7
           - linux/arm64
         pull: true
+        tags:
+          - ghcr.io/shihaamabr/debian-curl/debian-curl:10
+          - registry.gitlab.com/shihaam_me/debian-curl:10
+          - git.shihaam.dev/dockerfiles/debian-curl:10
     hostname: debian10
-    image: git.shihaam.dev/dockerfiles/debian-curl:10
+#    image: git.shihaam.dev/dockerfiles/debian-curl:10
